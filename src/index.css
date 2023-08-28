@@ -15,11 +15,11 @@
   }
 
   .wrapper {
-    @apply mx-7 grid -translate-y-10 gap-14 md:mx-24 md:gap-10 lg:mx-48;
+    @apply mx-7 grid -translate-y-10 gap-14 md:mx-24 md:gap-10 lg:mx-44;
   }
 
   .card-grid {
-    @apply grid gap-12 pb-20 md:gap-5;
+    @apply grid gap-12 pb-20 md:gap-[1.625rem];
   }
 
   .card-grid-item {
@@ -27,15 +27,19 @@
   }
 
   .card {
-    @apply relative rounded-md bg-neutral p-7 shadow-lg shadow-primary/20 md:px-8;
+    @apply relative rounded-md bg-neutral p-7 shadow-lg shadow-primary/20 md:px-8 md:py-8;
   }
 
   .card__content {
-    @apply w-full md:flex md:items-center md:justify-between;
+    @apply w-full md:flex md:items-center md:justify-between md:gap-2;
   }
 
   .card__img {
-    @apply absolute top-0 h-14 w-14 -translate-y-7 md:relative md:h-max md:w-max md:translate-y-0;
+    @apply absolute top-0 -translate-y-7 md:relative md:translate-y-0;
+  }
+
+  .card__img img {
+    @apply h-14 w-14 md:h-full md:w-[6.825rem];
   }
 
   .card__text {
@@ -51,7 +55,7 @@
   }
 
   .card__subtitle {
-    @apply text-secondary md:text-[22px];
+    @apply text-secondary md:py-1.5 md:text-[22px];
   }
 
   .card__details {
@@ -63,7 +67,7 @@
   }
 
   .card__buttons {
-    @apply flex flex-wrap gap-4;
+    @apply flex flex-wrap gap-4 md:justify-end;
   }
 
   .button {
@@ -79,6 +83,6 @@
   }
 
   .badge {
-    @apply rounded-2xl px-2 pb-0.5 pt-1.5;
+    @apply rounded-2xl px-2 pb-1 pt-2;
   }
 }
