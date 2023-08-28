@@ -1,6 +1,12 @@
-const Button = ({ text }) => {
+const Button = ({ text, clickFunc }) => {
+  const handleClick = (evt) => clickFunc(evt.target.innerHTML);
+
   return (
-    <button className="bg-cyan-200 text-primary px-2 py-1 font-bold rounded-md hover:bg-primary hover:text-neutral">
+    <button
+      type="button"
+      className="button button--cyan-200"
+      onClick={handleClick}
+    >
       {text}
     </button>
   );

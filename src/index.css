@@ -6,7 +6,79 @@
 
 @layer base {
   body {
-    @apply font-primary bg-cyan-200;
+    @apply bg-cyan-100 font-primary;
     font-size: 15px;
+  }
+
+  header {
+    @apply relative w-full bg-primary;
+  }
+
+  .wrapper {
+    @apply mx-7 grid -translate-y-10 gap-14 md:mx-24 md:gap-10 lg:mx-32;
+  }
+
+  .card-grid {
+    @apply grid gap-12 pb-14 md:gap-5;
+  }
+
+  .card-grid-item {
+    @apply flex flex-col md:flex-row md:items-center md:gap-8;
+  }
+
+  .card {
+    @apply relative rounded-md bg-neutral p-7 shadow-lg shadow-primary/20 md:px-8;
+  }
+
+  .card__content {
+    @apply w-full md:flex md:items-center md:justify-between;
+  }
+
+  .card__img {
+    @apply absolute top-0 h-14 w-14 -translate-y-7 md:relative md:h-max md:w-max md:translate-y-0;
+  }
+
+  .card__text {
+    @apply mt-2 font-bold leading-loose md:mt-0;
+  }
+
+  .card__title {
+    @apply mr-2 inline text-primary;
+  }
+
+  .card__badge {
+    @apply inline;
+  }
+
+  .card__subtitle {
+    @apply text-secondary md:text-lg;
+  }
+
+  .card__details {
+    @apply font-normal text-cyan-300 md:font-medium;
+  }
+
+  .card__detail {
+    @apply mr-2;
+  }
+
+  .card__buttons {
+    @apply flex flex-wrap gap-4;
+  }
+
+  .button {
+    @apply h-max rounded-[4px] px-2.5 py-1 font-bold;
+  }
+
+  .button--cyan-200 {
+    @apply bg-cyan-200 text-primary hover:bg-primary hover:text-neutral;
+  }
+
+  .button--link {
+    @apply text-lg text-cyan-300 hover:text-primary hover:underline;
+  }
+
+  .badge {
+    @apply rounded-2xl px-2 pb-0.5 pt-1;
   }
 }
