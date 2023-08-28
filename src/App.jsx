@@ -44,7 +44,7 @@ function App() {
           )}
 
           <div
-            className={`card-grid ${filter.length === 0 && "translate-y-24"}`}
+            className={`card-grid ${filter.length === 0 && "translate-y-32"}`}
           >
             {data.map((company) => {
               let filterItems = [company.role, company.level]

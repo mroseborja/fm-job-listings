@@ -15,11 +15,11 @@
   }
 
   .wrapper {
-    @apply mx-7 grid -translate-y-10 gap-14 md:mx-24 md:gap-10 lg:mx-32;
+    @apply mx-7 grid -translate-y-10 gap-14 md:mx-24 md:gap-10 lg:mx-48;
   }
 
   .card-grid {
-    @apply grid gap-12 pb-14 md:gap-5;
+    @apply grid gap-12 pb-20 md:gap-5;
   }
 
   .card-grid-item {
@@ -39,7 +39,7 @@
   }
 
   .card__text {
-    @apply mt-2 font-bold leading-loose md:mt-0;
+    @apply mt-2 font-bold leading-loose md:mt-0 md:text-lg;
   }
 
   .card__title {
@@ -51,7 +51,7 @@
   }
 
   .card__subtitle {
-    @apply text-secondary md:text-lg;
+    @apply text-secondary md:text-[22px];
   }
 
   .card__details {
@@ -59,7 +59,7 @@
   }
 
   .card__detail {
-    @apply mr-2;
+    @apply mr-3;
   }
 
   .card__buttons {
@@ -79,6 +79,6 @@
   }
 
   .badge {
-    @apply rounded-2xl px-2 pb-0.5 pt-1;
+    @apply rounded-2xl px-2 pb-0.5 pt-1.5;
   }
 }
