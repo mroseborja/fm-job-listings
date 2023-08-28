@@ -27,7 +27,7 @@
   }
 
   .card {
-    @apply relative rounded-md bg-neutral p-7 shadow-lg shadow-primary/20 md:px-8 md:py-8;
+    @apply relative rounded-md bg-neutral p-7 shadow-lg shadow-primary/20 md:px-8;
   }
 
   .card__content {
